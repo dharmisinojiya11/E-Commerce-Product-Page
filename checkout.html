@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Checkout - ShopZone</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">ShopZone</h1>
+</header>
+
+<div class="checkout-container">
+
+    <!-- LEFT SIDE -->
+    <div class="checkout-left">
+
+        <div class="checkout-card">
+            <h2>Delivery Address</h2>
+
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="mobile" placeholder="Mobile Number">
+            <textarea id="address" placeholder="Enter Address"></textarea>
+        </div>
+
+        <div class="checkout-card">
+            <h2>Payment Method</h2>
+
+            <select id="payment">
+                <option>Cash On Delivery</option>
+                <option>UPI</option>
+                <option>Credit Card</option>
+                <option>Debit Card</option>
+            </select>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="checkout-right">
+
+        <div class="price-box">
+
+            <h3>PRICE DETAILS</h3>
+
+            <hr>
+
+            <p>
+                <span>Price</span>
+                <span id="priceTotal">₹0</span>
+            </p>
+
+            <p>
+                <span>Delivery Charges</span>
+                <span style="color:green;">FREE</span>
+            </p>
+
+            <hr>
+
+            <h2>
+                <span>Total Amount</span>
+                <span id="checkoutTotal">₹0</span>
+            </h2>
+
+            <button onclick="placeOrder()">
+                Place Order
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+loadCheckoutTotal();
+</script>
+
+</body>
+</html>

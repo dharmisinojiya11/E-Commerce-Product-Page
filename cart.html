@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>My Cart</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopZone</h1>
+
+    <div>
+        <a href="products.html" class="cart-link">⬅ Back to Shop</a>
+    </div>
+</header>
+
+<div class="container">
+
+<h2>🛒 My Cart</h2>
+
+<div id="cart"></div>
+
+<h2 id="total">Total: ₹0</h2>
+
+<button class="checkout-btn"
+onclick="window.location.href='checkout.html'">
+Proceed To Checkout
+</button>
+
+</div>
+
+<script src="app.js"></script>
+<script>
+loadCart();
+</script>
+<script src="app.js"></script>
+</body>
+</html>

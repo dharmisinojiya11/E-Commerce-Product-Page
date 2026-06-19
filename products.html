@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ShopZone Products</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header>
+    <h1>ShopZone</h1>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products">
+    </div>
+
+    <div>
+        <button type="button" class="logout" onclick="logout()">Logout</button>
+    </div>
+</header>
+
+<div class="container">
+
+<h2>Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="images.jfif">
+<h3>I Watch</h3>
+<p>₹2999</p>
+<button onclick="addToCart('I Watch',2999)">Add To Cart</button>
+</div>
+
+<div class="card">
+<img src="image.jfif">
+<h3>Iphone 15</h3>
+<p>₹29999</p>
+<button onclick="addToCart('Iphone 15',29999)">Add To Cart</button>
+</div>
+
+<div class="card">
+<img src="ipad.jfif">
+<h3>iPad</h3>
+<p>₹59999</p>
+<button onclick="addToCart('iPad',59999)">Add To Cart</button>
+</div>
+
+<div class="card">
+<img src="airpods.jfif">
+<h3>Airpods</h3>
+<p>₹9999</p>
+<button onclick="addToCart('Airpods',9999)">Add To Cart</button>
+</div>
+
+<div class="card">
+<img src="shopping.webp">
+<h3>Headphones</h3>
+<p>₹1999</p>
+<button onclick="addToCart('Headphones',1999)">Add To Cart</button>
+</div>
+
+<div class="card">
+<img src="iphone15pro.webp">
+<h3>iPhone 15 Pro</h3>
+<p>₹199999</p>
+<button onclick="addToCart('iPhone 15 Pro',199999)">Add To Cart</button>
+</div>
+
+</div>
+
+</div>
+
+<div class="cart-btn-box">
+    <a href="cart.html" class="cartBtn">
+        🛒 Go To Cart
+    </a>
+</div>
+
+<div id="msg" class="success-msg">
+✅ Product Added To Cart
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
