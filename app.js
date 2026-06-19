@@ -53,7 +53,7 @@ function updateCount() {
 function logout() {
     localStorage.removeItem("loggedIn");
     localStorage.removeItem("cart");
-    window.location.href = "index.html";
+    window.location.href = "login.html";
 }
 
 // ================= LOAD CART =================
